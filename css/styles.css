@@ -104,7 +104,13 @@ img {
 .section-color{
     padding: 188px 0;
     background-color:#2e2f42;
+    background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url('/images/hero-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .head-h {
         max-width: 496px;
         font-weight: 700;
@@ -154,11 +160,34 @@ img {
 }
 .text-list {
     display: flex;
-    gap: 24px;   
+    gap: 24px;
 }
 .list-c {
     width: calc((100% - 3 * 24px) / 4);
 }
+.list-b {
+position: relative;
+}
+.list-b::before {
+    content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 112px;
+        /* висота прямокутника */
+        border: 1px solid #8e8f99;
+
+        background-color: #f4f4fd;
+        border-radius: 4px;
+        transform: translate(0, -120px);
+}
+.icon {
+width: 64px;
+height: 64px;
+
+}
+
 .head-list {
     margin-bottom: 8px;
         font-weight: 500;
@@ -196,11 +225,25 @@ img {
     display: flex;
     gap: 24px;
 }
+.icon-team {
+    border: 1px solid #4d5ae5;
+    border-radius: 50%;
+    background-color:#4d5ae5;
+  
+}
 .team-list {
      width: calc((100% - 3 * 24px) / 4);
      border-radius: 0px 0px 4px 4px;
      background-color: #fff;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
+.team-list:hover {
+    box-shadow: 0px 4px 16px rgba(46, 47, 66, 0.1),
+            0px 4px 4px rgba(0, 0, 0, 0.06);
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .team {
     padding: 32px 0;
 }
