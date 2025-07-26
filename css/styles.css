@@ -85,7 +85,7 @@ background-color: #404bbf;
 border-radius: 2px;
 
 }
-.current {
+.nav-item>.current {
     color:#4d5ae5;
 }
 .nav-link {
