@@ -76,12 +76,7 @@ img {
     align-items: center;
     gap: 40px;
 }
-.nav-link-a {
-    align-items: center;
-    position: relative;
-    color: #404bbf;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .nav-link-a::after {
 content:"";
 width: 100%;
@@ -94,6 +89,9 @@ border-radius: 2px;
 
 }
 .nav-link {
+    align-items: center;
+        position: relative;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    display: block;
     padding: 24px 0;
         font-weight: 500;
@@ -102,6 +100,9 @@ border-radius: 2px;
         letter-spacing: 0.02em;
         color: #2e2f42;
 
+}
+.nav-link-a {
+    color: #4d5ae5;
 }
 .nav-link:hover, .nav-link:focus {
     color: #404bbf;
@@ -254,6 +255,7 @@ border-radius: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .social-link:hover{
@@ -305,9 +307,7 @@ border-radius: 2px;
         color: #434455;
         margin-bottom: 8px;
 }
-.team-list-a {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 /* section four*/
 .head-section {
@@ -354,10 +354,11 @@ border-radius: 2px;
     background-color: #4d5ae5;
     height: 100%;
     width: 100%;
+    transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .image-list-a:hover .p-image {
-transform: translateY(100%);
+transform: translateY(0%);
 }
 .portfolio-list {
     margin-bottom: 8px;
