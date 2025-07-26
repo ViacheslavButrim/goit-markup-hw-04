@@ -85,6 +85,9 @@ background-color: #404bbf;
 border-radius: 2px;
 
 }
+.current {
+    color:#4d5ae5;
+}
 .nav-link {
     align-items: center;
         position: relative;
@@ -95,7 +98,6 @@ border-radius: 2px;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #404bbf;
 
 }
 .nav-link:hover, .nav-link:focus {
